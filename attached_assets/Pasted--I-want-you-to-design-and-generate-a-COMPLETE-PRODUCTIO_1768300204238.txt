@@ -1,0 +1,154 @@
+
+I want you to design and generate a COMPLETE, PRODUCTION-READY E-COMMERCE PLATFORM with:
+1) Customer-facing ecommerce website
+2) Admin panel
+3) Backend APIs
+4) Database schema
+
+=====================
+TECH STACK (MANDATORY)
+=====================
+Frontend (Customer + Admin):
+- React.js (modern hooks)
+- Responsive design (mobile, tablet, desktop)
+- SEO-optimized pages
+- High performance & accessibility
+- Clean UI/UX (Amazon / Flipkart level UX)
+
+Backend:
+- Node.js with Express.js
+- RESTful APIs
+- JWT-based authentication & authorization
+- Secure password hashing (bcrypt)
+- Role-based access control (Admin / Customer)
+
+Database:
+- MySQL
+- Proper indexing & relationships
+- Scalable schema design
+
+=====================
+USER TYPES
+=====================
+1) CUSTOMER
+2) ADMIN
+
+=====================
+CUSTOMER FEATURES (BASIC → ADVANCED)
+=====================
+Authentication & Profile:
+- User registration
+- Login / Logout
+- Forgot password (email OTP / reset link)
+- Email verification
+- Profile management (name, address, phone)
+
+Product & Shopping:
+- Product listing with pagination
+- Product categories & subcategories
+- Product search (keyword based)
+- Filters (price, category, rating)
+- Product detail page (images, description, price, stock)
+
+Cart & Wishlist:
+- Add/remove product from cart
+- Update quantity
+- Save items to wishlist
+- Persist cart (logged-in & guest user)
+
+Order & Payment:
+- Checkout flow (address → review → payment)
+- Order placement
+- Payment integration (Stripe / Razorpay simulation)
+- Order history
+- Order status tracking (Placed, Shipped, Delivered, Cancelled)
+- Invoice generation
+
+User Experience:
+- Fully responsive UI
+- Fast loading
+- Error handling & loaders
+- Toast notifications
+- SEO-friendly URLs
+- Meta tags for SEO
+- Lazy loading & code splitting
+
+=====================
+ADMIN PANEL FEATURES
+=====================
+Authentication:
+- Admin login (secured)
+- Role-based access (admin only)
+
+Product Management:
+- Add product
+- Edit product
+- Delete product
+- Upload multiple product images
+- Manage stock & pricing
+
+Category Management:
+- Add/edit/delete categories
+- Nested categories support
+
+Order Management:
+- View all orders
+- Update order status
+- Cancel / refund orders
+
+User Management:
+- View customers
+- Block / unblock users
+
+Dashboard:
+- Total users
+- Total orders
+- Total revenue
+- Sales analytics
+
+=====================
+BACKEND REQUIREMENTS
+=====================
+- Clean folder structure
+- MVC or modular architecture
+- API versioning (/api/v1)
+- Input validation
+- Centralized error handling
+- Secure environment variables
+- Logging
+- CORS handling
+
+=====================
+DATABASE REQUIREMENTS
+=====================
+- Users table (roles, auth details)
+- Products table
+- Categories table
+- Cart table
+- Wishlist table
+- Orders table
+- Order items table
+- Payments table
+
+Provide:
+- MySQL schema (CREATE TABLE queries)
+- Foreign keys & indexes
+
+=====================
+DELIVERABLES
+=====================
+1) Complete frontend React architecture
+2) Complete backend Node.js architecture
+3) MySQL schema design
+4) API endpoints list
+5) Authentication & authorization flow
+6) Admin vs customer access rules
+7) Security best practices
+8) SEO best practices
+9) Deployment-ready structure
+
+IMPORTANT:
+- Follow industry best practices
+- Write clean, scalable, readable code
+- Assume this project will be used by real users
+- Treat this as a real startup-level ecommerce product
