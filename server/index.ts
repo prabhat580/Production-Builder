@@ -58,6 +58,9 @@ app.use((req, res, next) => {
 
   next();
 });
+app.get("/health", (_req, res) => {
+  res.status(200).send("OK");
+});
 
 (async () => {
   await registerRoutes(httpServer, app);
@@ -85,14 +88,18 @@ app.use((req, res, next) => {
   // this serves both the API and the client.
   // It is the only port that is not firewalled.
   const port = parseInt(process.env.PORT || "5000", 10);
-  httpServer.listen(
-    {
-      port,
-      host: "0.0.0.0",
-      reusePort: true,
-    },
-    () => {
-      log(`serving on port ${port}`);
-    },
-  );
+httpServer.listen(port, "127.0.0.1", () => {
+  console.log(`🚀 Server running on http://127.0.0.1:${port}`);
+});
+  // httpServer.listen(
+  //   {
+  //     port,
+  //     // host: "0.0.0.0",
+  //     host: "localhost",
+  //     reusePort: true,
+  //   },
+  //   () => {
+  //     log(`serving on port ${port}`);
+  //   },
+  // );
 })();
